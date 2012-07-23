@@ -1,0 +1,274 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		171DAB4B162B981800AFFE2E /* HackerNewsHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 171DAB4A162B981800AFFE2E /* HackerNewsHandler.m */; };
+		171DAB4F162B985F00AFFE2E /* QSInterfaceController+Async.m in Sources */ = {isa = PBXBuildFile; fileRef = 171DAB4E162B985F00AFFE2E /* QSInterfaceController+Async.m */; };
+		45A6480A15BD4C1F009E4436 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45A6480915BD4C1F009E4436 /* Cocoa.framework */; };
+		45A6481015BD4C1F009E4436 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 45A6480E15BD4C1F009E4436 /* InfoPlist.strings */; };
+		45A6481E15BD4C1F009E4436 /* HackerNewsAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A6481D15BD4C1F009E4436 /* HackerNewsAction.m */; };
+		45A6482115BD4C1F009E4436 /* HackerNewsSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A6482015BD4C1F009E4436 /* HackerNewsSource.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		171DAB49162B981800AFFE2E /* HackerNewsHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HackerNewsHandler.h; sourceTree = "<group>"; };
+		171DAB4A162B981800AFFE2E /* HackerNewsHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HackerNewsHandler.m; sourceTree = "<group>"; };
+		171DAB4D162B985F00AFFE2E /* QSInterfaceController+Async.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "QSInterfaceController+Async.h"; sourceTree = "<group>"; };
+		171DAB4E162B985F00AFFE2E /* QSInterfaceController+Async.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "QSInterfaceController+Async.m"; sourceTree = "<group>"; };
+		45A6480615BD4C1F009E4436 /* HackerNewsPlugin.qsplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackerNewsPlugin.qsplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		45A6480915BD4C1F009E4436 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		45A6480D15BD4C1F009E4436 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
+		45A6480F15BD4C1F009E4436 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		45A6481215BD4C1F009E4436 /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
+		45A6481315BD4C1F009E4436 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		45A6481415BD4C1F009E4436 /* Developer.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Developer.xcconfig; sourceTree = "<group>"; };
+		45A6481515BD4C1F009E4436 /* QSPlugIn.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = QSPlugIn.xcconfig; sourceTree = "<group>"; };
+		45A6481615BD4C1F009E4436 /* QSPlugIn_Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = QSPlugIn_Debug.xcconfig; sourceTree = "<group>"; };
+		45A6481715BD4C1F009E4436 /* QSPlugIn_Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = QSPlugIn_Release.xcconfig; sourceTree = "<group>"; };
+		45A6481815BD4C1F009E4436 /* Quicksilver.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Quicksilver.pch; sourceTree = "<group>"; };
+		45A6481915BD4C1F009E4436 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		45A6481C15BD4C1F009E4436 /* HackerNewsAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HackerNewsAction.h; sourceTree = "<group>"; };
+		45A6481D15BD4C1F009E4436 /* HackerNewsAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HackerNewsAction.m; sourceTree = "<group>"; };
+		45A6481F15BD4C1F009E4436 /* HackerNewsSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HackerNewsSource.h; sourceTree = "<group>"; };
+		45A6482015BD4C1F009E4436 /* HackerNewsSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HackerNewsSource.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		45A6480315BD4C1F009E4436 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45A6480A15BD4C1F009E4436 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		45A647FA15BD4C1F009E4436 = {
+			isa = PBXGroup;
+			children = (
+				45A6480B15BD4C1F009E4436 /* HackerNews */,
+				45A6480815BD4C1F009E4436 /* Frameworks */,
+				45A6480715BD4C1F009E4436 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		45A6480715BD4C1F009E4436 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				45A6480615BD4C1F009E4436 /* HackerNewsPlugin.qsplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		45A6480815BD4C1F009E4436 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45A6480915BD4C1F009E4436 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		45A6480B15BD4C1F009E4436 /* HackerNews */ = {
+			isa = PBXGroup;
+			children = (
+				45A6481C15BD4C1F009E4436 /* HackerNewsAction.h */,
+				45A6481D15BD4C1F009E4436 /* HackerNewsAction.m */,
+				171DAB49162B981800AFFE2E /* HackerNewsHandler.h */,
+				171DAB4A162B981800AFFE2E /* HackerNewsHandler.m */,
+				45A6481F15BD4C1F009E4436 /* HackerNewsSource.h */,
+				45A6482015BD4C1F009E4436 /* HackerNewsSource.m */,
+				171DAB4D162B985F00AFFE2E /* QSInterfaceController+Async.h */,
+				171DAB4E162B985F00AFFE2E /* QSInterfaceController+Async.m */,
+				45A6481115BD4C1F009E4436 /* Configuration */,
+				45A6480C15BD4C1F009E4436 /* Supporting Files */,
+			);
+			path = HackerNews;
+			sourceTree = "<group>";
+		};
+		45A6480C15BD4C1F009E4436 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				45A6480D15BD4C1F009E4436 /* Info.plist */,
+				45A6480E15BD4C1F009E4436 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		45A6481115BD4C1F009E4436 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				45A6481215BD4C1F009E4436 /* Common.xcconfig */,
+				45A6481315BD4C1F009E4436 /* Debug.xcconfig */,
+				45A6481415BD4C1F009E4436 /* Developer.xcconfig */,
+				45A6481515BD4C1F009E4436 /* QSPlugIn.xcconfig */,
+				45A6481615BD4C1F009E4436 /* QSPlugIn_Debug.xcconfig */,
+				45A6481715BD4C1F009E4436 /* QSPlugIn_Release.xcconfig */,
+				45A6481815BD4C1F009E4436 /* Quicksilver.pch */,
+				45A6481915BD4C1F009E4436 /* Release.xcconfig */,
+			);
+			name = Configuration;
+			path = /private/tmp/QS/Configuration;
+			sourceTree = "<absolute>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		45A6480515BD4C1F009E4436 /* HackerNewsPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45A6482415BD4C1F009E4436 /* Build configuration list for PBXNativeTarget "HackerNewsPlugin" */;
+			buildPhases = (
+				45A6480115BD4C1F009E4436 /* ShellScript */,
+				45A6480215BD4C1F009E4436 /* Sources */,
+				45A6480315BD4C1F009E4436 /* Frameworks */,
+				45A6480415BD4C1F009E4436 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HackerNewsPlugin;
+			productName = HackerNews;
+			productReference = 45A6480615BD4C1F009E4436 /* HackerNewsPlugin.qsplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		45A647FC15BD4C1F009E4436 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Jordan Kay";
+			};
+			buildConfigurationList = 45A647FF15BD4C1F009E4436 /* Build configuration list for PBXProject "HackerNewsPlugin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 45A647FA15BD4C1F009E4436;
+			productRefGroup = 45A6480715BD4C1F009E4436 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				45A6480515BD4C1F009E4436 /* HackerNewsPlugin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		45A6480415BD4C1F009E4436 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45A6481015BD4C1F009E4436 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		45A6480115BD4C1F009E4436 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "\"$QS_BUILD_ROOT/Tools/bltrversion\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		45A6480215BD4C1F009E4436 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45A6481E15BD4C1F009E4436 /* HackerNewsAction.m in Sources */,
+				45A6482115BD4C1F009E4436 /* HackerNewsSource.m in Sources */,
+				171DAB4B162B981800AFFE2E /* HackerNewsHandler.m in Sources */,
+				171DAB4F162B985F00AFFE2E /* QSInterfaceController+Async.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		45A6480E15BD4C1F009E4436 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45A6480F15BD4C1F009E4436 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		45A6482215BD4C1F009E4436 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45A6481315BD4C1F009E4436 /* Debug.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		45A6482315BD4C1F009E4436 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45A6481915BD4C1F009E4436 /* Release.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		45A6482515BD4C1F009E4436 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45A6481515BD4C1F009E4436 /* QSPlugIn.xcconfig */;
+			buildSettings = {
+				PRODUCT_NAME = HackerNewsPlugin;
+			};
+			name = Debug;
+		};
+		45A6482615BD4C1F009E4436 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45A6481515BD4C1F009E4436 /* QSPlugIn.xcconfig */;
+			buildSettings = {
+				PRODUCT_NAME = HackerNewsPlugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		45A647FF15BD4C1F009E4436 /* Build configuration list for PBXProject "HackerNewsPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45A6482215BD4C1F009E4436 /* Debug */,
+				45A6482315BD4C1F009E4436 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45A6482415BD4C1F009E4436 /* Build configuration list for PBXNativeTarget "HackerNewsPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45A6482515BD4C1F009E4436 /* Debug */,
+				45A6482615BD4C1F009E4436 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 45A647FC15BD4C1F009E4436 /* Project object */;
+}
