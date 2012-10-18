@@ -23,7 +23,63 @@
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>QSActions</key>
-	<dict/>
+    <dict>
+        <key>HackerNewsBrowse</key>
+        <dict>
+            <key>name</key>
+            <string>Browse</string>
+            <key>description</key>
+            <string>Browse</string>
+            <key>icon</key>
+            <string>Find</string>
+            <key>precedence</key>
+            <string>4.0</string>
+            <key>directTypes</key>
+            <array>
+                <string>HackerNewsSection</string>
+            </array>
+            <key>actionClass</key>
+            <string>HackerNewsAction</string>
+            <key>actionSelector</key>
+            <string>browse:</string>
+        </dict>
+        <key>HackerNewsViewArticle</key>
+        <dict>
+            <key>name</key>
+            <string>View Article</string>
+            <key>description</key>
+            <string>View Article</string>
+            <key>precedence</key>
+            <string>0.0</string>
+            <key>directTypes</key>
+            <array>
+                <string>HackerNewsStory</string>
+            </array>
+            <key>actionClass</key>
+            <string>HackerNewsAction</string>
+            <key>actionSelector</key>
+            <string>viewArticle:</string>
+        </dict>
+        <key>HackerNewsViewComments</key>
+        <dict>
+            <key>name</key>
+            <string>View Comments</string>
+            <key>description</key>
+            <string>View Comments</string>
+            <key>icon</key>
+            <string>Actions</string>
+            <key>precedence</key>
+            <string>0.1</string>
+            <key>directTypes</key>
+            <array>
+                <string>HackerNewsStory</string>
+            </array>
+            <key>actionClass</key>
+            <string>HackerNewsAction</string>
+            <key>actionSelector</key>
+            <string>viewComments:</string>
+        </dict>
+    </dict>
 	<key>QSPlugIn</key>
 	<dict>
 		<key>author</key>

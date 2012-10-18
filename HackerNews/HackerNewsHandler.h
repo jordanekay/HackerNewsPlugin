@@ -9,6 +9,8 @@
 #import <Cocoa/Cocoa.h>
 #import "QSInterfaceController+Async.h"
 
+extern NSString *const kHackerNewsRoot;
+
 @interface HackerNewsHandler : NSObject
 
 + (HackerNewsHandler *)sharedHandler;

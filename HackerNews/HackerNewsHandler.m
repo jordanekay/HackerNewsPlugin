@@ -8,12 +8,15 @@
 
 #import "HackerNewsHandler.h"
 
-static NSString *const kHackerNewsAPIRoot = @"http://hndroidapi.appspot.com/news/format/json/page/?appid=HackerNewsPlugin";
+NSString *const kHackerNewsRoot    = @"http://news.ycombinator.com/item?id=%@";
+NSString *const kHackerNewsAPIRoot = @"http://hndroidapi.appspot.com/news/format/json/page/?appid=HackerNewsPlugin";
+
 static NSString *const kHackerNewsStory   = @"HackerNewsStory";
 
 static NSString *const kStoriesKey     = @"items";
 static NSString *const kTitleKey       = @"title";
-static NSString *const kURLKey         = @"items";
+static NSString *const kURLKey         = @"url";
+static NSString *const kItemIDKey      = @"item_id";
 static NSString *const kDescriptionKey = @"description";
 
 @implementation HackerNewsHandler
@@ -46,10 +49,12 @@ static NSString *const kDescriptionKey = @"description";
     for(NSDictionary *d in storyDictionaries) {
         NSString *title = [d objectForKey:kTitleKey];
         NSString *url = [d objectForKey:kURLKey];
+        NSString *itemID = [d objectForKey:kItemIDKey];
         NSString *description = [d objectForKey:kDescriptionKey];
         QSObject *story = [QSObject objectWithName:title];
         [story setObject:description forType:kHackerNewsStory];
-        [story setIdentifier:url];
+        [story setIdentifier:itemID];
+        [story setName:url];
         [story setLabel:title];
         [story setPrimaryType:kHackerNewsStory];
         [results addObject:story];

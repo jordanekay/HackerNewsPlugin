@@ -7,4 +7,7 @@
 
 @interface HackerNewsAction : QSActionProvider
 
+- (QSObject *)viewArticle:(QSObject *)story;
+- (QSObject *)viewComments:(QSObject *)story;
+
 @end

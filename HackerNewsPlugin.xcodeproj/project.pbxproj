@@ -144,7 +144,7 @@
 		45A647FC15BD4C1F009E4436 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0440;
+				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Jordan Kay";
 			};
 			buildConfigurationList = 45A647FF15BD4C1F009E4436 /* Build configuration list for PBXProject "HackerNewsPlugin" */;
@@ -235,6 +235,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 45A6481515BD4C1F009E4436 /* QSPlugIn.xcconfig */;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_NAME = HackerNewsPlugin;
 			};
 			name = Debug;
@@ -243,6 +244,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 45A6481515BD4C1F009E4436 /* QSPlugIn.xcconfig */;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_NAME = HackerNewsPlugin;
 			};
 			name = Release;

@@ -8,8 +8,8 @@
 #import "HackerNewsHandler.h"
 #import "HackerNewsSource.h"
 
-static NSString *const kHackerNewsSection = @"kHackerNewsSection";
-static NSString *const kHackerNewsIcon    = @"kHackerNewsIcon";
+static NSString *const kHackerNewsSection = @"HackerNewsSection";
+static NSString *const kHackerNewsIcon    = @"ToolbarDocumentsFolderIcon";
 
 static NSString *const kTopStories = @"Hacker News Top Stories";
 
@@ -38,12 +38,12 @@ static NSString *const kTopStories = @"Hacker News Top Stories";
 
 - (NSImage *)iconForEntry:(NSDictionary *)entry
 {
-    return [QSResourceManager imageNamed:@"GenericNetworkIcon"];
+    return [QSResourceManager imageNamed:kHackerNewsIcon];
 }
 
 - (void)setQuickIconForObject:(QSObject *)object
 {
-    [object setIcon:[QSResourceManager imageNamed:@"GenericNetworkIcon"]];
+    [object setIcon:[QSResourceManager imageNamed:kHackerNewsIcon]];
 }
 
 - (BOOL)loadIconForObject:(QSObject *)object
